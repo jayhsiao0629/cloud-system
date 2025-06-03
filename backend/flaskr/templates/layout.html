@@ -1,0 +1,86 @@
+<!doctype html>
+<title>2025 spring NYCU Cloud Native Final Project Backend</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+    }
+    nav h1 {
+        display: inline-block;
+        margin: 0;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 5px;
+        float: right;
+    }
+    nav ul li {
+        display: inline;
+        margin-left: 20px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    .content {
+        padding: 20px;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    footer p {
+        margin: 5px 0;
+    }
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    code {
+        background-color: #f4f4f4;
+        padding: 2px 4px;
+        border-radius: 3px;
+        white-space: pre-wrap;
+    }
+</style>
+<html>
+    <head>
+        <title>2025 spring NYCU Cloud Native Final Project Backend</title>
+    </head>
+    <body>
+        <nav>
+            <h1>2025 spring NYCU Cloud Native Final Project Backend</h1>
+            <ul>
+                <li><a href="/readme">Readme</a></li>
+                <li><a href="/apidocs">API Docs(Swagger)</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            {{ content|safe }}
+        </div>
+        <footer>
+            <p>&copy; 2025 NYCU Cloud Native Final Project</p>
+            <p>Powered by Flask</p>
+            <p>Version: {{ version }}</p>
+        </footer>
+    </body>
+</html>

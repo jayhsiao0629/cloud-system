@@ -1,0 +1,11 @@
+# grafana/provisioning/datasources/prometheus.yaml
+
+apiVersion: 1
+
+datasources:
+  - name: Prometheus           # 這個 Data Source 在 Grafana 中的顯示名稱
+    type: prometheus           # 資料來源類型：Prometheus
+    access: proxy              # 使用 proxy 模式
+    url: http://prometheus:9090  # 指向 Prometheus 的位址（容器內可用 service name）
+    isDefault: true            # 設為預設資料來源
+    editable: false            # 使用者進 UI 後無法編輯此 Data Source（可省略）
